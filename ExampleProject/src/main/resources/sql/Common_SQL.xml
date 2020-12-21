@@ -7,4 +7,11 @@
 		SELECT * FROM product_manage
 	</select>
 	
+	
+	<select id="loginCheck" parameterType="hashMap" resultType="hashmap">
+		SELECT * 
+		FROM customer_manage
+		WHERE id = #{id} AND pwd = #{pwd}
+	</select>
+	
 </mapper>

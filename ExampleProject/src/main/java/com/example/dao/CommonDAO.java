@@ -5,8 +5,8 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
-
-@Repository("commonDAO")
+//기록저장소 
+@Repository("commonDAO") 
 @SuppressWarnings("unchecked")
 public class CommonDAO extends AbstractDAO {
 
@@ -16,5 +16,8 @@ public class CommonDAO extends AbstractDAO {
 	public List<Map<String, Object>> getList(Map<String, Object> map) {
 		return (List<Map<String, Object>>)selectList("common.getList", map);} 
 	//common.getList의 common은 common_sql의 mapper namespace="common"
+	
+	public Map<String, Object> loginCheck(Map<String, Object> map) {
+		return (Map<String, Object>)selectOne("common.loginCheck", map);} 
 	
 }

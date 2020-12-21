@@ -22,7 +22,7 @@
         </header>
 
         <header class="header_middle">
-            <a href="/"><img src="resources/image/logo.png" alt="로고"></a>
+            <a href="index.do"><img src="resources/image/logo.png" alt="로고"></a>
         </header>
 
         <nav class="header_bottom">
@@ -69,9 +69,9 @@
     <div id="con">
         <div class="login_form">
             <h2>로그인</h2>
-            <form class="form" action="#" method="post">
-                <input type="text" placeholder="id"><br>
-                <input type="password" placeholder="pwd"><br>
+            <form class="form" action="loginCheck.do" method="post">
+                <input name="id" type="text" placeholder="id"><br>
+                <input name="pwd" type="password" placeholder="pwd"><br>
 
                 <div class="login_one">
                     <input type="checkbox">로그인 저장<br>

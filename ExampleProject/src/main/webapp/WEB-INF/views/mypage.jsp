@@ -22,7 +22,7 @@
         </header>
 
         <header class="header_middle">
-            <a href="/"><img src="resources/image/logo.png" alt="로고"></a>
+            <a href="index.do"><img src="resources/image/logo.png" alt="로고"></a>
         </header>
 
         <nav class="header_bottom">
